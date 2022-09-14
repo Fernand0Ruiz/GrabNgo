@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PM7.css" />
+    <script src="PM7.js" type="text/javascript"></script>
+    <title>GrabNgo</title>
+</head>
+<body>
+
+<div class="main">
+  <div class="top">
+    <div class="tab">
+      <button class="links" id="defaultLink" onclick="display(event, 'Header_Information')">Header Information</button>
+      <button class="links" onclick="display(event, 'Revised_Design')">Revised Design</button>
+      <button class="links" onclick="display(event, 'Prototype_Demonstration')">Prototype Demonstration</button>
+      <button class="links" onclick="display(event, 'Documentation')">Documen-<br>tation</button>
+      <button class="links" onclick="display(event, 'Conclusion_and_Reflection')">Conclus-<br>ion</button>
+    </div>
+  </div>
+
+  <div class="below">
+    <div id="Header_Information" class="content">
+      <div class="sectionHeader"> GrabNgo </div><br>
+      <span class="artifactHeader"> Team: </span> Roberto Wang, Maria Barrios and Fernando Ruiz.
+    </div>
+
+    <div id="Revised_Design" class="content">
+      <a href="imgs\RevDes1.png"><img src="imgs\RevDes1.png" alt="Revised Design 1"> </a>
+      <a href="imgs\RevDes2.png"><img src="imgs\RevDes2.png" alt="Revised Design 2"> </a>
+      <a href="imgs\RevDes3.png"><img src="imgs\RevDes3.png" alt="Revised Design 3"> </a>
+      <a href="imgs\RevDes4.png"><img src="imgs\RevDes4.png" alt="Revised Design 4"> </a>
+
+      <p>
+          As shown in the picture on the top left (#1), we can see the changes we talked about removing and changing circled in red.
+          We decided to remove the Nutrition, About, and Deals tabs due to not enough experience. We were disappointed we were not able
+          to implement a Nutrition section because it would have been valuable information to the users. However, the simpleness of the interface
+          and minimal selections make it easy to locate what the healthier options are. We additionaly, decided to include a GrabNgo icon next to
+          the name. We did this for aesthetic reasons. This way, it will be esaier to help users identify they are in the correct website. We then
+          decided to remove the search bar. After further discussing we agreed that it is not necessary due to the minimilistic look of our website.
+          The menu items are easy to locate within the interface; therefore, not needing a search bar. We also agreed on adding padding within the
+          columns to define the sections more. You can see the final implemnation in picture #2. Finally, on our previous implemantion we had an info.html
+          that held the order confirmation because we did not have time to implement it as seen in picture #3. So our goal was to get a confirmation page
+          that displays the proper order every time as seen in picture #4. Overall, we hope the minimal changes made help improve the user satisfaction and
+          functioning of our website.
+      </p>
+    </div>
+
+    <div id="Prototype_Demonstration" class="content">
+      <p class="listElement"><a href="https://vimeo.com/545328641">Scenario 1</a></p>
+        In Scenario 1, the participant P1 is familiar with GrabNgo prototype design by participating
+        previous project milestone prototype demostration. Since P1 is familiar with the design,
+        P1 is asked to navigate through the menu and order a full meal while at the same time
+        testing the different ways of adding and removing items from the cart (+/- button or cart input).
+        P1 manifest recognition of the prototype design, that can be glimpsed by the quickness of transitions
+        between different sections of the prototype (category selection to item selection to cart view manipulation)
+        Eventually, P1 confirm the order and test the new added implementation of cart modification during the
+        confirmation page.
+      <p class="listElement"><a href="https://vimeo.com/545327072">Scenario 2</a></p>
+        In Scenario 2, the participant P2 is not familiar with the prototype design.
+        P2 is asked to order a cheeseburger and to change the quantity of it in the cart.
+        P2 changes the quantity but does not update the cart, so she is told to update.
+        P2 selects from the main menu different categories (Salads, Sides, Desserts), and
+        respectively adds caesar salad, french fries, and brownies. P2 is asked to do
+        some major modification of the order, and she does it using the cart input [Feedback].
+        It expresses a preference for the cart input over the +/- button when modifying the order by P2.
+        P2 confirms the order and the prototype directs to the confirmation page.
+        P2 modifies the order in the confirmation page again, and revert it before place the order.
+      <p class="listElement"><a href="https://vimeo.com/545327523">Scenario 3</a></p>
+        In Scenario 3, the participant P3 is not familiar with the prototype design.
+        P3 is asked to order a cheeseburger after selecting the burges category from the main menu,
+        then P3 adds French fries and Caesar salad after that he recognize to use the main menu
+        to select category. P3 goes to confirmation page. It is revealed that he does not recognize
+        the cart input as a way to modify the quantity in the cart. Only in the confirmation page,
+        he is told about the editable cart input. P3 modifies the order in the confirmation page, then
+        P3 place the order.
+    </div>
+
+    <div id="Documentation" class="content">
+
+      <span class="artifactHeader">Documentation: Architecture</span><br><br>
+      <div class="listElement">
+        GrabNGo continues to follow the Model-View-Controller architecture covered in lecture and homework. The interface elements are divided into two views (Menu and Cart), the buttons displayed on these views are treated as the controllers using add event listeners. The menu data is stored in the model, which consists of a menu object that has menu items nested in their own individual categories, for example, “burger”:{ Cheese_Burger:{ price: 2.00}.. }. The cart is also stored in the model with an array of added menu item objects that hold their name, price, and amount. Lastly, the user's inputted purchase information is stored in an object in the model. There are two pages index.html (main page), and confirmedOrderpage.html (which thanks the user for their purchase). Info.css holds all the styling for the pages, and the index.js holds the MVC/code for all the pages. The Architecture did not change from the previous iteration PM5. However, the page info.html (input info page/confirm order) was removed and made into a view for the checkout page, which follows the same structure as the cart view.
+      </div><br>
+
+      <span class="artifactHeader">Documentation: Architecture</span><br><br>
+      <div>
+      - Used for the layout of navbar and columns.
+      <div class="listElement"><a href="https://www.w3schools.com/">www.w3schools.com</a></div><br><br>
+      - Used for category icons.
+      <div class="listElement"><a href="https://icons8.com/icons/ ">icons8.com</a></div><br><br>
+
+      Menu Item Images:<br>
+      <div class="listElement"><a href="https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3.jpg">Bacon-Cheese Burger</a></div>
+      <div class="listElement"><a href="https://elavegan.com/wp-content/uploads/2019/09/Vegan-burger-with-Awesome-burger-patty-veggies-and-homemade-cheese.jpg">Vegan Burger</a></div>
+      <div class="listElement"><a href="https://g.foolcdn.com/editorial/images/462740/red-robin-burger-gourmet-cheeseburger.jpg">Cheese Burger</a></div>
+      <div class="listElement"><a href="https://www.tasteofhome.com/recipes/gruyere-and-egg-burgers/">Egg Burger</a></div><br>
+
+      <div class="listElement"><a href="https://www.litehousefoods.com/recipe/apple-walnut-chicken-salad">Apple Walnut Chicken Salad</a></div>
+      <div class="listElement"><a href="https://www.onceuponachef.com/recipes/caesar-salad-dressing.html">Caesar Salad</a></div>
+      <div class="listElement"><a href="https://www.delish.com/cooking/recipe-ideas/a19872947/avocado-tomato-salad-recipe/">Avocado Tomato Salad</a></div>
+      <div class="listElement"><a href="https://natashaskitchen.com/cobb-salad/">Cobb Salad</a></div><br>
+
+      <div class="listElement"><a href="https://tastesbetterfromscratch.com/sweet-potato-fries/">Sweet Potato Fries</a></div>
+      <div class="listElement"><a href="https://www.thespruceeats.com/how-to-make-homemade-french-fries-2215971">French Fries</a></div>
+      <div class="listElement"><a href="https://www.pinterest.com/pin/446208275580534019/">Zucchini Parmesan</a></div>
+      <div class="listElement"><a href="https://www.gimmesomeoven.com/best-mashed-potatoes-recipe/">Mashed Potatoes</a></div><br>
+
+
+      <div class="listElement"><a href="https://www.pinterest.com/kellabella2008/">Chocolate Chip Cookie</a></div>
+      <div class="listElement"><a href="https://www.salasarbakers.com/gallery.php">Double Chocolate Chip Brownies</a></div>
+      <div class="listElement"><a href="https://www.pinterest.com/pin/455637687302914995/">Ice Cream</a></div>
+      <div class="listElement"><a href="https://www.pinterest.co.uk/pin/326722147973626135/">Milkshake</a></div><br>
+
+      <div class="listElement"><a href="https://www.healthline.com/nutrition/orange-juice">Orange Juice</a></div>
+      <div class="listElement"><a href="https://www.splendidtable.org/story/2013/05/22/making-iced-tea">Iced Tea</a></div>
+      <div class="listElement"><a href="https://thebusybaker.ca/healthy-3-ingredient-lemonade/">lemonade</a></div>
+      <div class="listElement"><a href="https://www.aarp.org/health/healthy-living/info-2019/soda-health-studies.html">Soda</a></div><br>
+      </div>
+
+      <span class="artifactHeader">Documentation: Differences from Design </span><br><br>
+      <div class="listElement">
+        Due to a lack of time and experience, we had to remove navbar features and extra pages. In particular, we removed the search bar feature, because we could not figure out how to implement the feature to search through menu items. We also removed extraneous pages that required a lot of data to implement such as all the nutrition information for the menu items. In addition to the removal of components, we also added a few components to improve the design and functionality that were suggested from observations and the class presentation. One component that was added was a custom logo to make the interface feel more official and personable. Another component that was added was cart calculation rounding to get rid of the awkward trailing zeros. Many CSS changes were also implemented, such as column shadows, cart div spacing, and a CSS error fix on menu items being too small to use +/- functionality. Most importantly, the checkout page implementation was fully implemented and styled, versus the previous iteration where it was hardcoded on a separate page. Checkout implementation included displaying the items in one’s cart, the order total, an input box for special instructions, and a place order button that transitions the page to confirm that it was placed with an order number above.
+      </div>
+
+    </div>
+
+    <div id="Conclusion_and_Reflection" class="content">
+      <span class="artifactHeader">Project Conclusion and Reflection.</span><br><br>
+      <div class="listElement">1.
+        The following changes should be made:<br>
+        <p>Search bar feature to cycle through menu items.</p>
+        <p>Credit/debit card payment feature, in addition to the already set pay pickup.</p>
+        <p>Additional data to the menu items, such as Nutrition and toppings.</p>
+        <p>Extra inputs, such as the ability to enter promo codes that automatically <br> apply to the cart.</p>
+        <p>Auto entering input, instead of update button to improve error prevention.</p>
+      </div><br>
+      <div class="listElement">2.
+        Maintaining page data would need to be added to the current prototype to make it able for production readiness testing. Without maintaining the state of the page the user will lose their data every time they transition to another page or refresh. Therefore, the page data must be maintained before testing to ensure that it is usable for the user.
+      </div><br>
+      <div class="listElement">3.
+        The most fundamental key point learned from the design process was the importance of conducting observations and utilizing feedback. In particular, the design decision that should be avoided, are fueled by personal preference versus consideration for the user. For instance, in sketches, we preferred to increment and decrement the number of items from the item itself, however, we found that users preferred having multiple ways of controlling the quantity, so +/- buttons and quantity textboxes were added. A particularly helpful design decision stemmed from utilizing the design principles such as the idea of system visibility, which inspired us to make the cart visible to the user at all times. This feature received good feedback from our users and offered uniqueness compared to other online menu ordering systems. If someone were to work on a similar interface project I think they could learn from our experience that design decisions should be made based on the user, not the creators, and those design decisions should be focused on following the design principles of Shneiderman, Nielsen, and Norman.
+      </div>
+    </div>
+
+</div>
+</body>
+</html>

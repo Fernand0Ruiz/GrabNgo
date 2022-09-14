@@ -1,0 +1,102 @@
+body {
+    background-color: #960018;
+    flex-direction: row;
+    display: flex;
+}
+
+.tab button {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #ccc;
+    text-align: center;
+    margin-right: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 60px;
+    font-size: 16px;
+}
+  
+.tab button.active {
+    background-color:#FFCCCB;
+}
+
+.main {
+    margin: auto;
+}
+
+.sectionHeader {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.artifactHeader {
+    font-weight: bold;
+}
+  
+.content {
+    border-radius: 0px 5px 5px 5px;
+    /*-Spec requirement-*/
+    font-family: sans-serif;
+    font-size: 12pt;
+    width: 640px;
+    /*------------------*/
+    height: auto;
+    background-color:#EEEEEE;
+    padding: 10px;
+    color: black;
+    display: none;
+    margin: auto;
+}
+  
+img {
+    max-width: 250px;
+    max-height: 200px;
+    border: 2px solid #78184A;
+    margin: 10px;
+}
+
+.accordion {
+    background-color: #FFCCCB;
+    margin-bottom: 1px;
+    transition: 0.5s;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    color:black;
+    padding: 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.accordionTop {
+    margin-top: 10px;
+}
+  
+  .active, .accordion:hover {
+    background-color: lightsteelblue; 
+}
+  
+  .panel {
+    background-color: white;
+    border-style: outset;
+    overflow: hidden;
+    padding: 0 18px;
+    display: none;
+}
+
+.listElement{
+    text-indent: 30px;
+    padding-bottom: 5px;
+}
+.listElement1{
+    text-indent: 60px;
+    padding-bottom: 5px;
+}
+.listElement2{
+    text-indent: 90px;
+    padding-bottom: 5px;
+}
