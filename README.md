@@ -2,7 +2,6 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
 * [Run Config](#run-config)
 
 ## General info
@@ -16,12 +15,8 @@ Created in a series of 7 milestones utilizing the HCI design process.
 Other Collaborators:
 * @Its-a-me-Maria
 * @pandaIsCoding
-
-
-## Technologies
-Project is created with:
-* 
 	
 ## Run Config
 Launch File: index.html
+
 Suggested Web Browser: Google Chrome. 
