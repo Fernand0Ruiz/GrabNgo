@@ -15,7 +15,9 @@ Created in a series of 7 milestones utilizing the HCI design process.
 
 Other Collaborators:
 @Its-a-me-Maria
+Its-a-me-Maria
 @pandaIsCoding
+pandaIsCoding pppanda
 
 
 ## Technologies
