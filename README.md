@@ -10,8 +10,8 @@ with a group of four. Exercised HCI design processes (in a series of 7 milestone
 unique and intuitive interaction between user and machine.
 
 Other Collaborators:
-* @Its-a-me-Maria
-* @pandaIsCoding
+* Maria  B. (@Its-a-me-Maria)
+* Robert S. (@pandaIsCoding)
 	
 ## Run Config
 Launch File: index.html
