@@ -14,10 +14,8 @@ Addtional Details:
 Created in a series of 7 milestones utilizing the HCI design process. 
 
 Other Collaborators:
-@Its-a-me-Maria
-Its-a-me-Maria
-@pandaIsCoding
-pandaIsCoding pppanda
+* @Its-a-me-Maria
+* @pandaIsCoding
 
 
 ## Technologies
@@ -26,4 +24,4 @@ Project is created with:
 	
 ## Run Config
 Launch File: index.html
-Suggested Web Browser: Google Crome. 
+Suggested Web Browser: Google Chrome. 
